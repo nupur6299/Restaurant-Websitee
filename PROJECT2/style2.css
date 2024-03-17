@@ -6,11 +6,16 @@
 }
 html,body{
     line-height:1.4;
-    font-weight: 300;
+    font-weight : 300;
     font-family: "Roboto", sans-serif;
 }
 nav{
     box-shadow:5px 5px 5px rgba(1,1,1,0.5); 
+    position: sticky;
+    top: 0;
+    margin-bottom: 30px;
+    padding: 10px;
+    background-color: whitesmoke;
 }
 .navigation-container{
     display: flex;
@@ -21,3 +26,66 @@ nav{
     max-width: 1200px;
     margin:0 auto;
 }
+/* hero section */
+.hero{
+    display: flex;
+    gap: 100px;
+    justify-content: center;
+    align-items: center;
+}
+
+.bar_icon{
+    font-size: 32px;
+}
+.hero-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.tag{
+    background-color: green;
+    padding:5px 10px;
+    color: white ;
+    align-self: flex-start;
+   
+
+}
+.hero-container h1{
+    font-size: 72px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+button{
+    align-self: flex-start;
+    background-color: rgb(235, 96, 46);
+    padding:15px 28px;
+    font-size: 20px;
+    border-color: transparent;
+    color:white;
+        transition:0.2s ease-in-out;
+        
+    }
+button:hover{
+    opacity:0.8;
+    transition:0.2s ease-in-out;
+}
+/* to make responsive */
+@media(max-width:786px){
+    .hero{
+        display:flex;
+        justify-content: center;
+    }
+    .hero-image{
+        width:80%;
+       
+    }
+    .hero-container{
+        gap:10px;
+        padding:10px
+    }
+    .hero-container h1{
+        font-size: 32px;
+    }
+
+}
+
